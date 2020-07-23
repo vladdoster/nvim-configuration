@@ -1,0 +1,47 @@
+{
+  // suggestions
+  "suggest.completionItemKindLabels": {
+    "text": "t",
+    "method": "m",
+    "function": ""
+  },
+  // diagnostics
+  "suggest.noselect": false,
+  "suggest.echodocSupport": true,
+  "codeLens.enable": true,
+  "signature.enable": true,
+  "suggest.preferCompleteThanJumpPlaceholder": true,
+  "diagnostic.errorSign": " ",
+  "diagnostic.warningSign": " ",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": " ",
+  "diagnostic.virtualText": true,
+  "list.indicator": ">",
+  "list.selectedSignText": " ",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "markdown",
+    "yaml",
+    "json"
+    //"python"
+  ],
+  "coc.preferences.hoverTarget": "float",
+  "python.jediEnabled": false,
+  "python.pythonPath": "/usr/bin/python",
+  //"python.formatting.provider": "black",
+  //"python.formatting.blackPath": "/usr/bin/black",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  //"python.linting.pylintPath": "/home/vlad/.pyenv/versions/py2nvim/bin/pylint",
+  "python.linting.pylintPath": "/home/vlad/.pyenv/versions/py3nvim/bin/pylint",
+  "python.sortImports.path": "/home/vlad/.pyenv/versions/py3nvim/bin/isort",
+  "python.venvFolders": ["envs", ".pyenv", ".direnv"],
+  "explorer.icon.enableNerdfont": true,
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    }
+  }
+}
