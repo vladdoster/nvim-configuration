@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# check to see if $HOME/.config/nvim exist
+[[ -d $HOME/.config/nvim ]] && echo "$HOME/.config/nvim doesn't exist" \
+|| \
+mkdir -p "$HOME"/.config/nvim/ || echo "Created neovim config dir" && \
+rsync -ar --exclude=".*" --exclude="install" . "$HOME"/.config/nvim && echo "Neovim config copied to $HOME/.config/nvim" && ls -al $HOME/.config/nvim || \
+echo "Couldn't copy neovim config to $HOME/.config/nvim" \
+|| \
+echo "$HOME/.config/nvim doesn't exist and couldn't be created" && exit 1
