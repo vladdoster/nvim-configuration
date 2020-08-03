@@ -1,0 +1,3 @@
+#!/bin/bash
+#
+# Sets up python 2 & 3 environment using pyenv for coc
